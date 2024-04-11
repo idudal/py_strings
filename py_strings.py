@@ -1,4 +1,4 @@
-
+# pylint:
 def reverse(text: str) -> str:   
     return text[::-1]
 
@@ -22,10 +22,10 @@ def count_vowels(text: str) -> int:
 
 def sum_digits(text: str) -> int:
     digits = "0123456789"
-    sum = 0
+    suma = 0
     for char in text:
         if char in digits:
-            sum += int(char)
+            suma += int(char)
     return sum
 
 
