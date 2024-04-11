@@ -1,9 +1,8 @@
 # pylint: disable=C0114
 
-def reverse(text: str) -> str:
-   
-   return text[::-1]
-#zmiana
+def reverse(text: str) -> str:   
+    return text[::-1]
+
 
 
 
@@ -15,7 +14,7 @@ def first_to_upper(text: str) -> str:
 
 
 def count_vowels(text: str) -> int:
-    vowels = "aeiouAEIOUyYęąó"
+    vowels = "aeiouAEIOUyYęąóĘĄÓ"
     count = 0
     for char in text:
         if char in vowels:
