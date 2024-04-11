@@ -1,5 +1,16 @@
 # pylint:
 def reverse(text: str) -> str:   
+    """
+    Return the 'text' backwards.
+    Parameters
+    ----------
+    text: str
+        The input string
+    Returns
+    -------
+    str
+        The text written backwards.
+    """
     return text[::-1]
 
 
