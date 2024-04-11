@@ -5,6 +5,7 @@ def reverse(text: str) -> str:
 
 
 
+
 def first_to_upper(text: str) -> str:
     words = text.split()
     capitalized_words = [word[0].upper() + word[1:] for word in words]
@@ -26,7 +27,7 @@ def sum_digits(text: str) -> int:
     for char in text:
         if char in digits:
             suma += int(char)
-    return sum
+    return suma
 
 
 def search_substr(text: str, sub: str) -> int:
