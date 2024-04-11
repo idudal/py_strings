@@ -15,7 +15,7 @@ def first_to_upper(text: str) -> str:
 
 
 def count_vowels(text: str) -> int:
-    vowels = "aeiouAEIOUyYęą"
+    vowels = "aeiouAEIOUyYęąó"
     count = 0
     for char in text:
         if char in vowels:
