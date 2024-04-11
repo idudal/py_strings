@@ -1,5 +1,4 @@
 # pylint: disable=C0114
-
 def reverse(text: str) -> str:   
     return text[::-1]
 
@@ -7,7 +6,6 @@ def reverse(text: str) -> str:
 
 
 def first_to_upper(text: str) -> str:
- 
     words = text.split()
     capitalized_words = [word[0].upper() + word[1:] for word in words]
     return ' '.join(capitalized_words)
