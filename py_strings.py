@@ -1,19 +1,30 @@
-def reverse(text: str) -> str:
-   
-   return text[::-1]
-#zmiana
+# pylint:
+def reverse(text: str) -> str:   
+    """
+    Return the 'text' backwards.
+    Parameters
+    ----------
+    text: str
+        The input string
+    Returns
+    -------
+    str
+        The text written backwards.
+    """
+    return text[::-1]
+
+
 
 
 
 def first_to_upper(text: str) -> str:
- 
     words = text.split()
     capitalized_words = [word[0].upper() + word[1:] for word in words]
     return ' '.join(capitalized_words)
 
 
 def count_vowels(text: str) -> int:
-    vowels = "aeiouAEIOUyY"
+    vowels = "aeiouAEIOUyYęąóĘĄÓ"
     count = 0
     for char in text:
         if char in vowels:
@@ -22,12 +33,12 @@ def count_vowels(text: str) -> int:
 
 
 def sum_digits(text: str) -> int:
-  digits = "0123456789"
-  sum = 0
-  for char in text:
-      if char in digits:
-            sum += int(char)
-  return sum
+    digits = "0123456789"
+    suma = 0
+    for char in text:
+        if char in digits:
+            suma += int(char)
+    return suma
 
 
 def search_substr(text: str, sub: str) -> int:
